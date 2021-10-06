@@ -14,7 +14,25 @@ app.use(
 app.use(express.json());
 
 // Rotas
-// app.post
+app.post('/user', (req, res) => {
+  
+  const { id, nome, nomeUsuario, senha, dataAcesso } = req.body
+
+  const user = {
+    id,
+    nome,
+    nomeUsuario,
+    senha,
+    dataAcesso,
+  }
+
+  // try {
+  //    catch (error) {
+  //      res.status()
+  //    }
+  // }
+
+})
 
 // rota inicializa
 app.get('/', (req, res) => {
