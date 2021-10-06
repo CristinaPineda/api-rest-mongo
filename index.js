@@ -31,7 +31,3 @@ mongoose
   })
   .catch((err) => console.log(err))
 
-
-// mongodb+srv://cristina:130913@api-cluster.srsr0.mongodb.net/bancodaapi?retryWrites=true&w=majority
-//usuario mongo atlas: cristina
-//senha mongo atlas: 130913
