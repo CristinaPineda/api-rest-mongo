@@ -14,8 +14,9 @@ app.use(
 app.use(express.json());
 
 // Rotas
-app.post('/user', (req, res) => {
-  const { id, nome, nomeUsuario, senha, dataAcesso } = req.body
+app.post('/user', async (req, res) => {
+  const { id, nome, nomeUsuario, senha, dataAcesso } = req.body;
+
   const user = {
     id,
     nome,
@@ -25,8 +26,10 @@ app.post('/user', (req, res) => {
   }
 
   try {
+
     await User.create(user);
-    res.status(201).json({ message: 'Usuario criado!'})
+    res.status(201).json({ message: 'Usuario criado!'});
+
   } catch (error) {
     res.status(500).json({ error: error })
   }
