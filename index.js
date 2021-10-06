@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-const Person = require('./models/Person');
+const User = require('./models/User');
 
 // ler json
 app.use(
@@ -12,6 +12,9 @@ app.use(
 );
 
 app.use(express.json());
+
+// Rotas
+// app.post
 
 // rota inicializa
 app.get('/', (req, res) => {
