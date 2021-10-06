@@ -15,9 +15,7 @@ app.use(express.json());
 
 // Rotas
 app.post('/user', (req, res) => {
-  
   const { id, nome, nomeUsuario, senha, dataAcesso } = req.body
-
   const user = {
     id,
     nome,
@@ -26,20 +24,18 @@ app.post('/user', (req, res) => {
     dataAcesso,
   }
 
-  // try {
-  //    catch (error) {
-  //      res.status()
-  //    }
-  // }
-
+  try {
+    await User.create(user);
+    res.status(201).json({ message: 'Usuario criado!'})
+  } catch (error) {
+    res.status(500).json({ error: error })
+  }
 })
 
 // rota inicializa
 app.get('/', (req, res) => {
-
   // requisição
   res.json({ message: 'oi express' })
-
 })
 
 //porta
@@ -53,4 +49,3 @@ mongoose
 
   })
   .catch((err) => console.log(err))
-
