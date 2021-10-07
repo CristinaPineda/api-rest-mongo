@@ -21,7 +21,6 @@ app.post('/user', async (req, res) => {
     res.status(422).json({ error: 'Todos os campos são obrigatórios'});
   }
 
-
   const user = {
     id: nome,
     nome,
@@ -31,7 +30,6 @@ app.post('/user', async (req, res) => {
   }
 
   try {
-
     await User.create(user);
     res.status(201).json({ message: 'Usuario criado!'});
 
