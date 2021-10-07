@@ -11,9 +11,9 @@ Consulte a documentação completa desse serviço aqui :point_down:
 
 * Método GET:
 
-endpoit: http://localhost:3000/user (Retorna todos os usuários cadastrados no banco)
+endpoint: http://localhost:3000/user (Retorna todos os usuários cadastrados no banco)
 
-http://localhost:3000/user/idUser (Retorna o usuario correspondente ao parâmetro passado)
+endpoint: http://localhost:3000/user/idUser (Retorna o usuario correspondente ao parâmetro passado)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
