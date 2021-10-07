@@ -17,12 +17,17 @@ app.use(express.json());
 app.post('/user', async (req, res) => {
   const { id, nome, nomeUsuario, senha, dataAcesso } = req.body;
 
+  if(!nome || !nomeUsuario || !senha ) {
+    res.status(422).json({ error: 'Todos os campos são obrigatórios'});
+  }
+
+
   const user = {
-    id,
+    id: nome,
     nome,
     nomeUsuario,
     senha,
-    dataAcesso,
+    dataAcesso: Date(),
   }
 
   try {
