@@ -22,12 +22,9 @@ app.get('/', (req, res) => {
   res.json({ message: 'Home' })
 });
 
-const USER = process.env.USER;
-const PASSWORD = process.env.PASSWORD
-
 mongoose
   .connect(
-    `mongodb+srv://${USER}:${PASSWORD}@api-cluster.srsr0.mongodb.net/bancodaapi?retryWrites=true&w=majority`
+    'mongodb+srv://cristina:130913@api-cluster.srsr0.mongodb.net/bancodaapi?retryWrites=true&w=majority'
   )
   .then(() => {
     console.log('Conectado com sucesso ao mongodb atlas')

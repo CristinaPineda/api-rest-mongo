@@ -43,7 +43,7 @@ router.get('/:idUser', async (req, res) => {
   try {
     const idUser = req.params.idUser;
     const userId = await User.findOne({ idUser: idUser });
-    if(!idUser) {
+    if(!userId) {
       res.status(422).json({ message: 'Usuário não encontrado!'});
       return;
     }
