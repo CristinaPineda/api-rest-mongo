@@ -55,7 +55,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+# .env ( PARA COMPARTILHAR COM RECRUTADOR VOU MANTER DESABILITADO, NORMALMENTE ISSO NÃO É VERSIONADO)
 
 # next.js build output
 .next
