@@ -60,7 +60,7 @@ endpoint: http://localhost:3000/user
 
 Para testar suas requisições pode-se usar o POSTMAN ou o INSOMNIA.
 
-Na documentação da Api há um link que leva até o POSTMAN online onde os endpoints dessa aplicação estão salvos e pode-se fazer um teste da aplicação.
+Na documentação da Api há um link ( Clique em RUN IN POSTMAN no canto superior direito da tela) que leva até o POSTMAN online onde os endpoints dessa aplicação estão salvos e pode-se fazer um teste da aplicação.
 
 <a href="https://documenter.getpostman.com/view/12775850/UUy7Zipm#5680bc7d-8612-4c1d-bab4-1237ebb39ed5"><p>Api-rest-mongo - documentação</p></a>
 
