@@ -18,8 +18,7 @@ app.use('/user', userRoutes);
 
 // rota inicializa
 app.get('/', (req, res) => {
-  // requisição
-  res.json({ message: 'oi express' })
+  res.json({ message: 'Home' })
 });
 
 //porta
