@@ -77,4 +77,22 @@ router.patch('/:idUser', async (req, res) => {
   };
 });
 
+// Delete
+router.delete('/:idUser', async (req, res) => {
+  const idUser = req.params.idUser;
+  const user = await User.findOne({ idUser: idUser});
+
+  if(!user) {
+    res.status(422).json({ message: 'Usuário não encontrado!'});
+    return;
+  };
+
+  try {
+    await User.deleteOne({ idUser: idUser });
+    res.status(200).json({ message: "Usuario removido com sucesso!" });
+  } catch (error) {
+    res.status(500).json({ error: error });
+  };
+})
+
 module.exports = router;
