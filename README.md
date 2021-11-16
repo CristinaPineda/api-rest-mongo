@@ -2,6 +2,9 @@
 
 ## Aplicação para cadastro de usuários
 
+
+![image](https://user-images.githubusercontent.com/64100944/142064855-35f0b950-6b43-4fb0-a195-35753a1af6b3.png)
+
 Crie requests usando os endpoints dessa aplicação para realizar operações com persistência de banco de dados (Mongodb Atlas) e usando o padrão Rest de Apis.
 
 Consulte a documentação completa desse serviço aqui :point_down:
